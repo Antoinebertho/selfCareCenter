@@ -70,8 +70,7 @@ h2 {
 }
 
 .button-suppression {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 1% 15px;
   margin: 1%;
   background-color: #7ebdc2;
   font-family: "Raleway", sans-serif;
