@@ -4,39 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Self Care Center</title>
+    <title>✨ Self Care Center ✨</title>
   </head>
   <body>
-    <div class="title">
-      <h1>✨ Self Care Center ✨</h1>
-    </div>
-    <h2>Which type of message?</h2>
-    <div class="questionBox">
-      <label
-        ><input
-          id="affirmation"
-          type="radio"
-          name="affirmation-mantra"
-          value="affirmation"
-          checked
-        />
-        affirmation</label
-      >
-      <label
-        ><input
-          id="mantra"
-          type="radio"
-          name="affirmation-mantra"
-          value="mantra"
-        />
-        mantra</label
-      >
-      <br />
-      <button type="submit">Receive Message</button>
-    </div>
-    <div class="answerBox">
-      <img src="images/meditate.svg" alt="icone méditation" />
-    </div>
+    <h1>✨ Self Care Center ✨</h1>
+    <h2>Quel genre de message ?</h2>
+    <section class="choice-container">
+      <form>
+        <div class="input">
+          <span>
+            <input
+              id="affirmation"
+              type="radio"
+              name="affirmation-mantra"
+              value="affirmation"
+              checked
+            />
+            <label for="selection-affirmation">affirmation</label>
+          </span>
+          <span>
+            <input
+              id="mantra"
+              type="radio"
+              name="affirmation-mantra"
+              value="mantra"
+            />
+            <label for="selection-mantra">mantra</label>
+          </span>
+        </div>
+      </form>
+      <button class="button-1" type="submit">Recevoir Message</button>
+    </section>
+    <section class="answer-container">
+      <img
+        class="meditation-image"
+        src="images/meditate.svg"
+        alt="icone méditation"
+      />
+      <p class="random-text hidden">texte</p>
+      <button class="button-suppression hidden">Supprimer</button>
+    </section>
+    <script src="/app.js"></script>
   </body>
 </html>
