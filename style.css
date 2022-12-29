@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(211, 211, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(211, 211, 195, 1) 0%,
+    rgba(122, 160, 188, 1) 50%,
+    rgba(35, 77, 110, 1) 100%
+  );
+  color: white;
+  font-family: "Comic Sans MS";
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.questionBox {
+  width: 600px;
+  background: white;
+  border: 3px solid black;
+  position: absolute; /* indique que l'élément doit être positionné absolument par rapport à son élément parent */
+  top: 50%; /* aligne l'élément au milieu de l'écran sur l'axe y */
+  left: 50%; /* aligne l'élément au milieu de l'écran sur l'axe x */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* déplace l'élément de 50% de sa propre taille vers la gauche et vers le haut afin de le centrer parfaitement */
+}
+
+label {
+  color: black;
+}
+
+.answerBox {
+  width: 600px;
+  background: white;
+  border: 3px solid black;
+}
+
+/* img {
+  width: 10%;
+} */
