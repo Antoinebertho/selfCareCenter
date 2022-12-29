@@ -43,7 +43,7 @@ h2 {
 }
 
 .button-1:hover {
-  background-color: rgb(161, 194, 194);
+  background-color: #7ebdc2;
   border: 1px solid #134d71;
   color: black;
 }
@@ -57,10 +57,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border-radius: 10px;
   background-color: #ffffff;
-  width: 50%;
+  width: 60%;
   padding: 5%;
   margin: auto;
   margin-top: 10%;
@@ -74,19 +73,20 @@ h2 {
   padding-left: 3%;
   padding-right: 3%;
   margin: 1%;
-  background-color: rgb(198, 223, 223);
+  background-color: #7ebdc2;
   font-family: "Raleway", sans-serif;
   border-radius: 3px;
-  border: 1px solid #134d71;
+  border: 1px solid #7ebdc2;
 }
 
 .button-suppression:hover {
-  background-color: rgb(161, 194, 194);
+  background-color: #134d71;
   color: white;
 }
 
 p {
   font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .hidden {
