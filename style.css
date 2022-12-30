@@ -24,12 +24,14 @@ h2 {
   background-color: #ffffff;
   text-align: center;
   border: 0px solid #000000;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 13px;
   width: 40%;
   height: 30%;
   margin: auto;
   font-style: italic;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .button-1 {
@@ -40,11 +42,12 @@ h2 {
   padding: 3px 25px;
   margin-top: 20px;
   border: 1px solid #134d71;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .button-1:hover {
   background-color: #7ebdc2;
-  border: 1px solid #134d71;
+  border: 1px solid #7ebdc2;
   color: black;
 }
 
@@ -63,6 +66,8 @@ h2 {
   padding: 5%;
   margin: auto;
   margin-top: 10%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .meditation-image {
@@ -76,11 +81,13 @@ h2 {
   font-family: "Raleway", sans-serif;
   border-radius: 3px;
   border: 1px solid #7ebdc2;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .button-suppression:hover {
   background-color: #134d71;
   color: white;
+  border: 1px solid #134d71;
 }
 
 p {
