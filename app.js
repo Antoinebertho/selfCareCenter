@@ -30,30 +30,39 @@ let mantras = [
   "'Si tu laisses reposer une eau boueuse, elle s’éclaircira. De même, si tu laisses reposer ton esprit troublé, la chose à faire t’apparaîtra clairement.'",
 ];
 
+// The default behavior of the event (e.g., submitting a form) is prevented.
 buttonMessage.addEventListener("click", function (event) {
   event.preventDefault();
+  // The class "hidden" is removed from the buttonClear element.
   buttonClear.classList.remove("hidden");
+  // The class "hidden" is added to the meditationImg element.
   meditationImg.classList.add("hidden");
+  // The class "hidden" is removed from the randomText element.
   randomText.classList.remove("hidden");
+  // A radio input is selected using the querySelector method and stored in the radioInput variable.
   let radioInput = document.querySelector(
     "input[name=affirmation-mantra]:checked"
   );
-
+  // If the value of the selected radio input is "affirmation", the content of the randomText element is set to a randomly selected element from the affirmations array using the getRandomIndex function.
   if (radioInput.value === "affirmation") {
     randomText.innerHTML = `<p>${
       affirmations[getRandomIndex(affirmations)]
     }</p>`;
+    // If the value of the selected radio input is not "affirmation", the content of the randomText element is set to a randomly selected element from the mantras array using the getRandomIndex function.
   } else {
     randomText.innerHTML = `<p>${mantras[getRandomIndex(mantras)]}</p>`;
   }
 });
-
+// The second event listener is for the buttonClear button and is triggered when the button is clicked. When the button is clicked, the following occurs:
 buttonClear.addEventListener("click", function () {
+  // The class "hidden" is added to the buttonClear element.
   buttonClear.classList.add("hidden");
+  // The class "hidden" is removed from the meditationImg element.
   meditationImg.classList.remove("hidden");
+  // The class "hidden" is added to the randomText element.
   randomText.classList.add("hidden");
 });
-
+// The getRandomIndex function returns a random index for an array by generating a random number between 0 and 1, multiplying it by the length of the array, and then using the Math.floor method to round the result down to the nearest whole number. This whole number is then used as the index for the array.
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
