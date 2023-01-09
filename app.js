@@ -30,7 +30,7 @@ let mantras = [
   "'Si tu laisses reposer une eau boueuse, elle s’éclaircira. De même, si tu laisses reposer ton esprit troublé, la chose à faire t’apparaîtra clairement.'",
 ];
 
-// The default behavior of the event (e.g., submitting a form) is prevented.
+// The default behavior of the event (ex: submitting a form) is prevented.
 buttonMessage.addEventListener("click", function (event) {
   event.preventDefault();
   // The class "hidden" is removed from the buttonClear element.
