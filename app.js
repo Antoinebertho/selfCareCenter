@@ -30,14 +30,14 @@ let mantras = [
   "'Si tu laisses reposer une eau boueuse, elle s’éclaircira. De même, si tu laisses reposer ton esprit troublé, la chose à faire t’apparaîtra clairement.'",
 ];
 
-// The default behavior of the event (ex: submitting a form) is prevented.
+// Le comportement par défaut de l'event (ex: soumettre un form) ne se produira pas
 buttonMessage.addEventListener("click", function (event) {
   event.preventDefault();
-  // The class "hidden" is removed from the buttonClear element.
+  // La classe "hidden" est retirée de l'élément buttonClear.
   buttonClear.classList.remove("hidden");
-  // The class "hidden" is added to the meditationImg element.
+  // La classe "hidden" est ajoutée à l'élément meditationImg.
   meditationImg.classList.add("hidden");
-  // The class "hidden" is removed from the randomText element.
+  // La classe "hidden" est retirée de l'élément randomText.
   randomText.classList.remove("hidden");
   // A radio input is selected using the querySelector method and stored in the radioInput variable.
   let radioInput = document.querySelector(
@@ -55,11 +55,11 @@ buttonMessage.addEventListener("click", function (event) {
 });
 // The second event listener is for the buttonClear button and is triggered when the button is clicked. When the button is clicked, the following occurs:
 buttonClear.addEventListener("click", function () {
-  // The class "hidden" is added to the buttonClear element.
+  // La classe "hidden" est ajoutée à l'élément buttonClear.
   buttonClear.classList.add("hidden");
-  // The class "hidden" is removed from the meditationImg element.
+  // La classe "hidden" est retirée de l'élément meditationImg.
   meditationImg.classList.remove("hidden");
-  // The class "hidden" is added to the randomText element.
+  // La classe "hidden" est ajoutée à l'élément randomText.
   randomText.classList.add("hidden");
 });
 // The getRandomIndex function returns a random index for an array by generating a random number between 0 and 1, multiplying it by the length of the array, and then using the Math.floor method to round the result down to the nearest whole number. This whole number is then used as the index for the array.
