@@ -39,21 +39,22 @@ buttonMessage.addEventListener("click", function (event) {
   meditationImg.classList.add("hidden");
   // La classe "hidden" est retirée de l'élément randomText.
   randomText.classList.remove("hidden");
-  // A radio input is selected using the querySelector method and stored in the radioInput variable.
+  // Une input radio est sélectionnée en utilisant la méthode querySelector et stockée dans la variable radioInput.
   let radioInput = document.querySelector(
     "input[name=affirmation-mantra]:checked"
   );
-  // If the value of the selected radio input is "affirmation", the content of the randomText element is set to a randomly selected element from the affirmations array using the getRandomIndex function.
+
+  // Si la valeur de la radio input sélectionnée est "affirmation", le contenu de l'élément randomText est défini sur un élément sélectionné au hasard dans le tableau d'affirmations à l'aide de la fonction getRandomIndex.
   if (radioInput.value === "affirmation") {
     randomText.innerHTML = `<p>${
       affirmations[getRandomIndex(affirmations)]
     }</p>`;
-    // If the value of the selected radio input is not "affirmation", the content of the randomText element is set to a randomly selected element from the mantras array using the getRandomIndex function.
+    // Si la valeur de la radio input sélectionnée n'est pas "affirmation", le contenu de l'élément randomText est défini sur un élément sélectionné au hasard dans le tableau de mantras à l'aide de la fonction getRandomIndex.
   } else {
     randomText.innerHTML = `<p>${mantras[getRandomIndex(mantras)]}</p>`;
   }
 });
-// The second event listener is for the buttonClear button and is triggered when the button is clicked. When the button is clicked, the following occurs:
+// Le second event listener est pour le bouton buttonClear et est trigger quand le bouton est cliqué. Quand le bouton est cliqué, les actions suivantes se passent:
 buttonClear.addEventListener("click", function () {
   // La classe "hidden" est ajoutée à l'élément buttonClear.
   buttonClear.classList.add("hidden");
@@ -62,7 +63,8 @@ buttonClear.addEventListener("click", function () {
   // La classe "hidden" est ajoutée à l'élément randomText.
   randomText.classList.add("hidden");
 });
-// The getRandomIndex function returns a random index for an array by generating a random number between 0 and 1, multiplying it by the length of the array, and then using the Math.floor method to round the result down to the nearest whole number. This whole number is then used as the index for the array.
+
+//La fonction getRandomIndex renvoie un index aléatoire pour un tableau en générant un nombre aléatoire compris entre 0 et 1, en le multipliant par la longueur du tableau, puis en utilisant la méthode Math.floor pour arrondir le résultat au nombre entier le plus proche. Ce nombre entier est ensuite utilisé comme indice pour le tableau.
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
